@@ -247,3 +247,6 @@ The correct architecture: gating and source assembly happen **before** `res.writ
 
 **The one thing to do today that has the most leverage:**
 Build the golden-set eval harness. Every other decision — whether to add BM25, whether to change reranker, whether to adjust TOP_K — is guessing without it. You currently have no quantitative baseline to argue from.
+
+
+$Score = \alpha \cdot Score_{dense} + (1-\alpha) \cdot Score_{sparse}$)
